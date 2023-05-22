@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Myapp1</string>
+    <string name="Usuario">ユーザー</string>
+    <string name="Contraseña">パスワード</string>
+    <string name="ingresar">入る</string>
+    <string name="Registrar">チェックイン</string>
+    <string name="Obtener_Contraseña">パスワードを取得</string>
+    <string name="llenar_el_mundo_con_emoci_n_atravez_del_poder_de_la_creatividad_y_la_tecnolog_a">世界を感動で満たし、 創造力とテクノロジーの力で</string>
+    <string name="esta_no_es_la_mejor_app_en_el_mundo_esta_app_es_solo_un_tributo">" 「これは世界で最高のアプリではありません。これは単なるオマージュです。」"</string>
+    <string name="sobre_mi">" 私について"</string>
+    <string name="cerrar_session">閉じる</string>
+    <string name="misi_n">" ミッション"</string>
+    <string name="asunto">主題</string>
+    <string name="escribe_tu_asunto">" 件名を書きます"</string>
+    <string name="introduce_tu_texto">" テキストを書いてください"</string>
+    <string name="el_texto_del_mail_va_aqui">メールのテキストがここに入ります</string>
+
+</resources>

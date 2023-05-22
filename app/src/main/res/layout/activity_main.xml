@@ -1,0 +1,114 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/fondo5"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+
+    <ImageView
+        android:id="@+id/imageViewLogo"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+       android:src="@drawable/sonylogo2"
+        android:layout_weight="50"
+        />
+
+    <EditText
+        android:id="@+id/Usuariotext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+
+        android:ems="10"
+        android:inputType="textPersonName"
+        android:hint="@string/Usuario"
+        android:textColorHint="#96B8DB"
+        android:textColor="#96B8DB"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edt_style"
+        />
+
+    <EditText
+        android:id="@+id/Contraseñatext"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+                android:ems="10"
+        android:hint="@string/Contraseña"
+        android:inputType="textPassword"
+        android:textColorHint="@color/awa"
+        android:textColor="@color/awa"
+        android:layout_weight="9"
+        android:layout_marginLeft="15dp"
+        android:layout_marginRight="15dp"
+        android:layout_marginBottom="15dp"
+        android:background="@drawable/edt_style"
+        />
+
+    <Button
+        android:id="@+id/mainBtnIngresar"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginBottom="5dp"
+        android:layout_weight="10"
+        android:background="@drawable/btn_style"
+        android:text="@string/ingresar"
+        android:textColor="@color/negro"
+        app:iconTint="@color/GrisO" />
+
+    <TextView
+        android:id="@+id/Registro"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="9"
+        android:ems="10"
+        android:text="@string/Registrar"
+        android:textSize="30sp"
+        android:gravity="center"
+       android:textColor="@color/Celestino"
+
+         />
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_weight="20"
+        android:gravity="center|top"
+        android:orientation="horizontal"
+        android:visibility="visible"
+        tools:ignore="Suspicious0dp">
+
+        <ImageButton
+            android:id="@+id/RegFb"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            android:visibility="visible"
+            tools:srcCompat="@drawable/Ficonsmol" />
+
+        <ImageButton
+            android:id="@+id/RegGgl"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:padding="5dp"
+            tools:srcCompat="@drawable/GiconSmol" />
+    </LinearLayout>
+
+    <TextView
+        android:id="@+id/textView"
+        android:layout_width="match_parent"
+        android:layout_height="37dp"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:text="@string/Obtener_Contraseña"
+        android:textColor="@color/Grazul"
+        android:textStyle="bold"
+        tools:text="Obtener Contraseña" />
+</LinearLayout>

@@ -1,0 +1,33 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto">
+    <item
+        android:icon="@drawable/sonys"
+        android:title=" "
+        app:showAsAction="always">
+
+        <menu>
+
+            <item
+                android:id="@+id/main"
+                android:icon="@drawable/worldicon"
+                android:title="@string/misi_n"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/sobrenostros"
+                android:icon="@drawable/infoico"
+                android:title="@string/sobre_mi"
+                app:showAsAction="never" />
+
+            <item
+                android:id="@+id/cerrarsession"
+                android:icon="@drawable/logouticon"
+                android:title="@string/cerrar_session"
+                app:showAsAction="never" />
+
+
+        </menu>
+
+    </item>
+</menu>

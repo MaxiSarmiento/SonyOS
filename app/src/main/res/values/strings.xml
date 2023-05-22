@@ -1,0 +1,18 @@
+<resources>
+    <string name="app_name">Myapp1</string>
+    <string name="Usuario">Usuario</string>
+    <string name="Contraseña">Contraseña</string>
+    <string name="ingresar">Ingresar</string>
+    <string name="Registrar">Registrar</string>
+      <string name="Obtener_Contraseña" >Obtener Contraseña</string>
+    <string name="llenar_el_mundo_con_emoci_n_atravez_del_poder_de_la_creatividad_y_la_tecnolog_a">Llenar el mundo con emoción, atravez del poder de la creatividad y la tecnología.</string>
+    <string name="esta_no_es_la_mejor_app_en_el_mundo_esta_app_es_solo_un_tributo">Esta no es la mejor app en el mundo, esta app es solo un tributo</string>
+    <string name="sobre_mi">Sobre Mi</string>
+    <string name="cerrar_session">Cerrar Session</string>
+    <string name="misi_n">Misión</string>
+    <string name="e_mail" translatable="false">E-mail:</string>
+    <string name="asunto">Asunto:</string>
+    <string name="escribe_tu_asunto">escribe tu asunto</string>
+    <string name="introduce_tu_texto">Introduce tu texto:</string>
+    <string name="el_texto_del_mail_va_aqui">el texto del mail va aqui</string>
+</resources>

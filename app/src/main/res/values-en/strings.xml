@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Myapp1</string>
+    <string name="Usuario">User</string>
+    <string name="Contraseña">Password</string>
+    <string name="ingresar">Access</string>
+    <string name="Registrar">Register</string>
+    <string name="Obtener_Contraseña">Get Password</string>
+    <string name="llenar_el_mundo_con_emoci_n_atravez_del_poder_de_la_creatividad_y_la_tecnolog_a">Fill the world with emotion, through the power of creativity and technology</string>
+    <string name="esta_no_es_la_mejor_app_en_el_mundo_esta_app_es_solo_un_tributo">\"This is not the best app in the world, This is just a Tribute.\"</string>
+    <string name="sobre_mi">About Me</string>
+    <string name="cerrar_session">Close Session</string>
+    <string name="misi_n">Mission</string>
+    <string name="asunto">Subject</string>
+    <string name="escribe_tu_asunto">Write your Subject</string>
+    <string name="introduce_tu_texto">Write your Text</string>
+    <string name="el_texto_del_mail_va_aqui">Mail text goes here</string>
+</resources>
