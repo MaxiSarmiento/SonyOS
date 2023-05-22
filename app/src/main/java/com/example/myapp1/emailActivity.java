@@ -1,4 +1,5 @@
 package com.example.myapp1;
+import android.net.Uri;
 import android.os.Bundle;
 import android.app.Activity;
 import android.content.Intent;
@@ -32,15 +33,16 @@ public class emailActivity extends Activity {
                     String message=editTextMessage.getText().toString();
 
 
-                    Intent email = new Intent(Intent.ACTION_SEND);
-                    email.putExtra(Intent.EXTRA_EMAIL, new String[]{ to});
-                    email.putExtra(Intent.EXTRA_SUBJECT, subject);
+                    Intent email = new Intent(Intent.ACTION_SENDTO, Uri.fromParts(
+                            "mailto","federicotrani@ites.org", null));
+                   email.putExtra(Intent.EXTRA_SUBJECT, subject);
                     email.putExtra(Intent.EXTRA_TEXT, message);
+                    startActivity(Intent.createChooser(email, "Elije un cliente de Mail:"));
 
                     //need this to prompts email client only
                     email.setType("message/rfc822");
 
-                    startActivity(Intent.createChooser(email, "Choose an Email client :"));
+
 
                 }
 

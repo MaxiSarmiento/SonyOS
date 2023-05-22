@@ -1,8 +1,6 @@
 package com.example.myapp1;
 
-import android.Manifest;
 import android.content.Intent;
-import android.content.pm.PackageManager;
 import android.net.Uri;
 import android.os.Bundle;
 import android.view.Menu;
@@ -10,7 +8,6 @@ import android.view.View;
 import android.widget.Toast;
 
 import androidx.appcompat.app.AppCompatActivity;
-import androidx.core.app.ActivityCompat;
 
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
@@ -31,15 +28,18 @@ public class sobrenosActivity extends AppCompatActivity {
         btn1.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View v) {
-                Intent callintent = new Intent(Intent.ACTION_CALL);
-                callintent.setData(Uri.parse("tel:+542954376566"));
-                Toast.makeText(sobrenosActivity.this, "Llamando a Bacan, pedime una docena", Toast.LENGTH_SHORT).show();
-                if (ActivityCompat.checkSelfPermission(sobrenosActivity.this, Manifest.permission.CALL_PHONE) !=
-                        PackageManager.PERMISSION_GRANTED)
-                    return;
-                startActivity(callintent);
+               Toast.makeText(sobrenosActivity.this, "Llamando a Bacan, pedime una docena", Toast.LENGTH_SHORT).show();
+                String numeroTelefono = "+542954376566";
+                dialHacerLlamada(numeroTelefono);
             }
+            private void dialHacerLlamada(String numeroTelefono){
+                Uri uri = Uri.parse("tel:" + numeroTelefono);
+                Intent intent = new Intent(Intent.ACTION_DIAL, uri);
 
+                if(intent.resolveActivity(getPackageManager()) !=  null){
+                    startActivity(intent);
+                }
+            }
         });
 
 
