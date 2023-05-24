@@ -1,9 +1,9 @@
 package com.example.myapp1;
-import android.net.Uri;
-import android.os.Bundle;
+
 import android.app.Activity;
 import android.content.Intent;
-import android.view.Menu;
+import android.net.Uri;
+import android.os.Bundle;
 import android.view.View;
 import android.view.View.OnClickListener;
 import android.widget.Button;
@@ -37,7 +37,7 @@ public class emailActivity extends Activity {
                             "mailto","federicotrani@ites.org", null));
                    email.putExtra(Intent.EXTRA_SUBJECT, subject);
                     email.putExtra(Intent.EXTRA_TEXT, message);
-                    startActivity(Intent.createChooser(email, "Elije un cliente de Mail:"));
+                    startActivity(Intent.createChooser(email, "Elige un cliente de Mail:"));
 
                     //need this to prompts email client only
                     email.setType("message/rfc822");
@@ -58,12 +58,6 @@ public class emailActivity extends Activity {
             });
         }
 
-        @Override
-        public boolean onCreateOptionsMenu(Menu menu) {
-            // Inflate the menu; this adds items to the action bar if it is present.
-            getMenuInflater().inflate(R.menu.menu_item, menu);
-            return true;
-        }
 
     }
 

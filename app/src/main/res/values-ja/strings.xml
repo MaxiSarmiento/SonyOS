@@ -15,5 +15,6 @@
     <string name="escribe_tu_asunto">" 件名を書きます"</string>
     <string name="introduce_tu_texto">" テキストを書いてください"</string>
     <string name="el_texto_del_mail_va_aqui">メールのテキストがここに入ります</string>
+    <string name="ir_a_mi_github">ギツブでイクゾ！</string>
 
 </resources>

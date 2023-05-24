@@ -3,7 +3,6 @@ package com.example.myapp1;
 import android.content.Intent;
 import android.net.Uri;
 import android.os.Bundle;
-import android.view.Menu;
 import android.view.View;
 import android.widget.Toast;
 
@@ -15,7 +14,7 @@ public class sobrenosActivity extends AppCompatActivity {
 
     FloatingActionButton btn1;
     FloatingActionButton click;
-
+    FloatingActionButton btngith;
 
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
@@ -53,17 +52,22 @@ public class sobrenosActivity extends AppCompatActivity {
                 }
             });
 
-    }
-    @Override
-    public boolean onCreateOptionsMenu(Menu menu) {
-        getMenuInflater().inflate(R.menu.menu_item,menu);
-        return true;
-    }
-    @Override
-    public void onBackPressed()
-    {
+        btngith = findViewById(R.id.btngit);
+        btngith.setOnClickListener(new View.OnClickListener(){
 
+            @Override
+            public void onClick(View view){
+                goToURL("https://github.com/MaxiSarmiento");
+            }
+            private void goToURL (String url){
+                Uri uriurl= Uri.parse(url);
+                Intent launchBrowser = new Intent(Intent.ACTION_VIEW,uriurl);
+                startActivity(launchBrowser);
+            }
+
+        });
     }
+
 }
 
 

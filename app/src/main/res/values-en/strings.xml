@@ -15,4 +15,5 @@
     <string name="escribe_tu_asunto">Write your Subject</string>
     <string name="introduce_tu_texto">Write your Text</string>
     <string name="el_texto_del_mail_va_aqui">Mail text goes here</string>
+    <string name="ir_a_mi_github">Go to my Github</string>
 </resources>
